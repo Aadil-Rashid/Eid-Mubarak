@@ -7,10 +7,9 @@ const greetingText     = document.getElementById('greeting');
 const quote = quoteText.innerText ;
 const greeting = greetingText.innerText;
 var site = "To get Covid_19 Handbook, Click to the below link... https://aadil-rashid.github.io/Eid-Mubarak/";
-  
     
 var quoteArray = [
-    "On this Eid, I wish you and your family Allah's blessings and May we all be protected from this pandemic.",
+    "On this Eid, I wish you and your family a Happy Eid Mubarak.",
     "Wishing you and your family a very happy, prosperous and blissful Eid Day!",
     "May Allah forgive all your sins and accept your sacrifice and put an ease to all your suffering!",
     "Avoid touching your eyes, mouth and nose immediately after using an alcohol-based hand sanitizer, as it can cause irritation",
@@ -18,27 +17,25 @@ var quoteArray = [
     "Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately and wash your hands. Avoid touching eyes, nose and mouth.",
     "May this Eid bring joy and love to your heart and create all the opportunities of success for you!",
     "May you continue to grow wiser and more charming every day! May this Eid bring happiness in your heart and to your family",
-    "May your sacrifice get answered, and Allah (SWT) bless you with his uncountable blessings!",
-    "May God bless us all and make us all devout and honorable Muslims.",
-    "Dear Mama and Abu, I feel so lucky to have parents like you to spend the day with. You have been the reason why every Eid day seems like a day I spend in heaven."
-
+    "May God bless us all and make us all devout and True Muslims. Take care of Poor around you.",
+    "Dear Mama and Abu Jee, Thank-you for everything, and I Love you both... \"Eid-Mubarak\" ",
+    "May the sacrifice of Eid ul Adha strengthen your faith in Allah and light up your world with countless blessings. Happy Eid!!",
+    "Wear protective equipment: faceMask, gloves; while distributing Qurbani meat, Be Safe and Protect others as well.",
+    "May Allah keep you away from harm and troubles. May all your sin be forgiven and may you be blessed with peaceful life for each day ahead.",
+    "I wish you all a very happy and peaceful EID. May Allah accept your good deeds, forgive your transgression and ease the suffering of all the people around the globe. Ammen!",
+    "Allah (SWT) obliges us to protect and care for ourselves and one another. Maintain Social distancing where ever you go.",
+    "Part of being a person is about helping others. Take care of Poor around you.",
+    "No shadows to depress you. Only joys to surround you. Allah himself to bless you. These are my wishes for you.",
+    "May Allah fulfil all your prayers and bless you with his kindness. Remember me in your prayers. ",
+    "On this blessed occasion of Eid, wishing you and your family joy, happiness, peace and prosperity!",
+    "Warm greetings and Eid Mubarak to everyone. May this Eid-al-adha, the Almighty shower His blessings on each one of us.",
+    "Maintain Social Distancing to Protect yourself and others, have a Happy, Healthy and Safe Eid",
+    
 ]  
 
 function newQuote() {
     var randomNumber = Math.floor(Math.random() * (quoteArray.length));
     document.getElementById('quote').innerHTML = quoteArray[randomNumber];
-
-    // Reduce font size for long quotes
-    if(data.quoteText.length > 80) {
-        quoteText.classList.add("long-quote");
-    }else {
-        quoteText.classList.remove("long-quote");
-    }
-    
-    // quoteText.innerText = data.quoteText;
-
- 
-
 }
 
 function ButtonClick() {
@@ -61,15 +58,10 @@ function tweetQuote() {
 }
 
 function whatsappPost() {
-    // <a target="_blank" href="https://web.whatsapp.com/send?text=www.google.com" data-action="share/whatsapp/share">Share via Whatsapp web</a>
+
     const whatsappUrl = `https://api.whatsapp.com/send?text=${quote}  - ${greeting} - ${site}`;
     window.open(whatsappUrl, '_blank');
 }
-
-// https://twitter.com/share?url=[post-url]&text=[post-title]&via=[via]&hashtags=[hashtags]
-// https://www.facebook.com/sharer.php?u=[post-url]
-// https://api.whatsapp.com/send?text=[post-title] [post-url]
-
 
 twitterBtn.addEventListener('click', tweetQuote);
 whatsappBtn.addEventListener('click', whatsappPost);

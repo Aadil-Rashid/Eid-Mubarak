@@ -54,15 +54,10 @@ body {
   font-weight: 400;
 }
 
-.button-container {
-  margin-top: 15px;
-  display: flex;
-  justify-content: stretch;
-}
-
 button {
   cursor: pointer;
   font-size: 1.5rem;
+
   height: 2.8rem;
   border: none;
   border-radius: 30px;
@@ -70,10 +65,11 @@ button {
   background: rgb(15, 15, 15);
   outline: none;
   padding: 0.5rem 1.7rem;
-  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.80);
+  box-shadow: 0 0.5rem rgba(121, 121, 121, 0.80);
 }
 button:hover {
   filter:brightness(110%);
+  column-rule: rgb(255, 255, 255);
 }
 
 button:active {
@@ -81,24 +77,34 @@ button:active {
   box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
-.twitter-button:hover {
-  color: #38a1f3;
-}
-.whatsapp-button:hover {
-  color: #25D366;
-}
-.btn-dwn:hover {
-  color: #405DE6;
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: stretch;   
 }
 
+.btn-dwn:hover {
+  color: #e213af;
+}
+.twitter-button {
+  height: 3rem;
+  width: 6rem;
+}
+.whatsapp-button {
+  height: 3rem;
+  width: 6rem;
+}
 .fa-twitter {
   font-size: 1.5rem;
   font-size: xx-large;
+  color: #38a1f3;
 }
 .fa-whatsapp {
   font-size: 1.5rem;
   font-size: xx-large;
+  color: #25D366;
 }
+
 
 /* Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px) {
