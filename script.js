@@ -6,8 +6,9 @@ const quoteText     = document.getElementById('quote');
 const greetingText     = document.getElementById('greeting');
 const quote = quoteText.innerText ;
 const greeting = greetingText.innerText;
-var site = "To get Covid_19 Handbook, Click to the link below... https://aadil-rashid.github.io/Eid-Mubarak/";
-    
+var site = "And to get a Guide on how to deal with the COVID- 19 pandemic from an Islamic \
+Perspective. Then hit this link... https://aadil-rashid-8338.netlify.app";
+
 var quoteArray = [
     "On this Eid, I wish you and your family a Happy Eid Mubarak.",
     "Wishing you and your family a very happy, prosperous and blissful Eid Day!",
