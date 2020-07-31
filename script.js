@@ -6,14 +6,14 @@ const quoteText     = document.getElementById('quote');
 const greetingText     = document.getElementById('greeting');
 const quote = quoteText.innerText ;
 const greeting = greetingText.innerText;
-var site = "To get Covid_19 Handbook, Click to the below link... https://aadil-rashid.github.io/Eid-Mubarak/";
+var site = "To get Covid_19 Handbook, Click to the link below... https://aadil-rashid.github.io/Eid-Mubarak/";
     
 var quoteArray = [
     "On this Eid, I wish you and your family a Happy Eid Mubarak.",
     "Wishing you and your family a very happy, prosperous and blissful Eid Day!",
     "May Allah forgive all your sins and accept your sacrifice and put an ease to all your suffering!",
     "Avoid touching your eyes, mouth and nose immediately after using an alcohol-based hand sanitizer, as it can cause irritation",
-    "Remember that washing your hands with soap and water is also effective against COVID-19. Please Take Care Of yourself for your loved once",
+    "Remember that washing your hands with soap and water is also effective against COVID-19. Please Take Care Of yourself for your loved ones",
     "Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately and wash your hands. Avoid touching eyes, nose and mouth.",
     "May this Eid bring joy and love to your heart and create all the opportunities of success for you!",
     "May you continue to grow wiser and more charming every day! May this Eid bring happiness in your heart and to your family",
@@ -28,8 +28,13 @@ var quoteArray = [
     "No shadows to depress you. Only joys to surround you. Allah himself to bless you. These are my wishes for you.",
     "May Allah fulfil all your prayers and bless you with his kindness. Remember me in your prayers. ",
     "On this blessed occasion of Eid, wishing you and your family joy, happiness, peace and prosperity!",
-    "Warm greetings and Eid Mubarak to everyone. May this Eid-al-adha, the Almighty shower His blessings on each one of us.",
+    "Warm greetings and Eid Mubarak to everyone. May on this Eid-Ul-Adha, the Almighty showers His blessings on each one of us.",
     "Maintain Social Distancing to Protect yourself and others, have a Happy, Healthy and Safe Eid",
+    "On this Eid-Ul-Adha, we should pray, love, celebrate with our loved ones and remember Allah for his kindness.",
+    "On this Eid-ul-Adha, May Allah bless you with good health, happiness, and prosperity",
+    "May Allah give you all the success and happiness you desire. May Allah be with you Always.",
+    "Wishing a blessed Eid that will help you to win every challenge of life!",
+    "I wish that Allah showers his divine blessing and fullfils all your dreams on Eid-ul-Adha as always!!"
     
 ]  
 
@@ -53,13 +58,13 @@ function show_alert() {
 
 // Tweet Quote
 function tweetQuote() {    
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - ${greeting} - ${site}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} -  ${site}`;
     window.open(twitterUrl, '_blank');
 }
 
 function whatsappPost() {
 
-    const whatsappUrl = `https://api.whatsapp.com/send?text=${quote}  - ${greeting} - ${site}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${quote} - ${site}`;
     window.open(whatsappUrl, '_blank');
 }
 
