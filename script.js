@@ -6,7 +6,7 @@ const quoteText     = document.getElementById('quote');
 const greetingText     = document.getElementById('greeting');
 const quote = quoteText.innerText ;
 const greeting = greetingText.innerText;
-var site = "And to get a Guide on how to deal with the COVID- 19 pandemic from an Islamic \
+var site = "And to get a Guide on how to deal with the COVID_19 pandemic from an Islamic \
 Perspective. Then hit this link... https://aadil-rashid-8338.netlify.app";
 
 var quoteArray = [
